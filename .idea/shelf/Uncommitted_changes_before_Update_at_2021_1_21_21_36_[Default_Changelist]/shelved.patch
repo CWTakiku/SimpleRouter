@@ -1,0 +1,56 @@
+Index: repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.jar.sha1	(date 1611236006466)
++++ repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.jar.sha1	(date 1611236006466)
+@@ -0,0 +1,1 @@
++da16b18c3d0b1ede8eb9d2368e16fb53a10b303a
+\ No newline at end of file
+Index: repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.jar.md5
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.jar.md5	(date 1611236006466)
++++ repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.jar.md5	(date 1611236006466)
+@@ -0,0 +1,1 @@
++2d0bbf928b5f3b0be2e9c54bff2b5ca0
+\ No newline at end of file
+Index: repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.pom.md5
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.pom.md5	(date 1611236006468)
++++ repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.pom.md5	(date 1611236006468)
+@@ -0,0 +1,1 @@
++4ceb9aaeb05f61bec448ca2a7165b255
+\ No newline at end of file
+Index: repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.pom	(date 1611236006467)
++++ repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.pom	(date 1611236006467)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
++    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
++  <modelVersion>4.0.0</modelVersion>
++  <groupId>com.bailun.android</groupId>
++  <artifactId>simplerouter</artifactId>
++  <version>1.0.3</version>
++</project>
+Index: repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.pom.sha1	(date 1611236006468)
++++ repo/com/bailun/android/simplerouter/1.0.3/simplerouter-1.0.3.pom.sha1	(date 1611236006468)
+@@ -0,0 +1,1 @@
++4bf6e524ac308a5152a0b337e99f526a52783902
+\ No newline at end of file

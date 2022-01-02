@@ -1,0 +1,24 @@
+apply plugin: 'groovy'
+
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+}
+version='1.0.0'
+archivesBaseName = 'simpleRouterPlugin'
+
+if (isImplementationLocation.toBoolean()){
+    apply plugin: 'maven'
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                repository(url: uri('../repo'))
+            }
+        }
+    }
+}else {
+     apply plugin: 'com.github.dcendents.android-maven'
+
+}
+

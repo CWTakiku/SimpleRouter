@@ -1,0 +1,6 @@
+include ':module_test2'
+include ':module_test1'
+include ':lib_router'
+include ':simplerouter'
+include ':app'
+rootProject.name = "Simpler Router Demo"
