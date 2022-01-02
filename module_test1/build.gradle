@@ -38,6 +38,6 @@ dependencies {
     if (isImplementationLocation.toBoolean()) {
         implementation project(':lib_router')
     } else {
-        implementation "com.bailun.android:lib_router:${VERSION_NAME}"
+        implementation "com.gitee.its_takiku:simplerouter:$lib_router_version"
     }
 }
