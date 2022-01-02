@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.takiku.simplerouter'
+apply plugin: 'com.stl.simplerouter'
 apply plugin: 'kotlin-android'
 
 android {

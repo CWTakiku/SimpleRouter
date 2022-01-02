@@ -14,7 +14,6 @@
             <option value="$PROJECT_DIR$/lib_router" />
             <option value="$PROJECT_DIR$/module_test1" />
             <option value="$PROJECT_DIR$/module_test2" />
-            <option value="$PROJECT_DIR$/simplerouter" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
