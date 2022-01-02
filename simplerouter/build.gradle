@@ -1,6 +1,5 @@
 apply plugin: 'groovy'
 
-
 dependencies {
     implementation gradleApi()
     implementation localGroovy()
@@ -8,7 +7,7 @@ dependencies {
 version='1.0.0'
 archivesBaseName = 'simpleRouterPlugin'
 
-if (isImplementationLocation.toBoolean()){
+if (!isImplementationLocation.toBoolean()){
     apply plugin: 'maven'
     uploadArchives {
         repositories {
