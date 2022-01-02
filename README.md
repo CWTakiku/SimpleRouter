@@ -1,5 +1,5 @@
 # SimpleRouterPlugins
-路由插件，方便项目集成路由功能
+路由插件，方便项目集成路由功能，欢迎star！
 
 ### 自动集成步骤
 
@@ -7,11 +7,11 @@
 ```gradle
 allprojects{
     repositories{
-        maven { url "" }
+      maven { url 'https://jitpack.io' }
       
     }
     dependencies {
-        classpath
+       classpath "com.github.mrchengwenlong:SimpleRouter:1.0.0"
     }
 }
 ```
@@ -21,7 +21,7 @@ allprojects{
 - ###### 第一步：添加SDK、在module的build.gradle文件添加路由依赖
 ```gradle
 dependencies {
-    implementation "com.bailun.android:lib_router:0.0.7"
+    implementation "com.gitee.its_takiku:simplerouter:1.0.3"
 }
 ```
 - ###### 第二步：添加构建插件、 在module的build.gradle添加插件引用，自行配置插件参数
