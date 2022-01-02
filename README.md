@@ -18,22 +18,22 @@ allprojects{
 
 #####  2、添加路由
 项目添加`SimpleRouter`需要三步操作
-- ###### 第一步：添加SDK、在module的build.gradle文件添加路由依赖
+- ###### 第一步：添加SDK、在需要路由的module下的build.gradle文件添加路由依赖
 ```gradle
 dependencies {
     implementation "com.gitee.its_takiku:simplerouter:1.0.3" //添加路由库的依赖
 }
 ```
-- ###### 第二步：添加构建插件、 在module的build.gradle添加插件引用，自行配置插件参数
+- ###### 第二步：添加构建插件、 在app module或者基础module下的build.gradle添加插件引用，自行配置插件参数
 ```gradle
 apply plugin: 'com.stl.simplerouter'
 
 pathExtension {
-    // 应用包名前缀，路由会扫描路径下的java文件
+    // 应用包名前缀，路由会扫描路径下的java或者kotlin文件
     srcPath "src\\main\\java\\com\\stl" 
     // 扫描后生成的路由表类的包名，此包名对应该module的包名
     routerPackName "com.stl.lib_router"
-    // 匹配模块名前缀，包含该数组的前缀模块才会执行扫描
+    // 匹配模块名前缀，包含该数组的前缀的模块才会执行扫描，优化编译速度
     filterPrefix "app", "module"
 }
 ```
