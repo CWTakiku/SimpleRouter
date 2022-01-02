@@ -1,5 +1,5 @@
-# SimpleRouterPlugins
-路由插件，方便项目集成路由功能，欢迎star！
+# SimpleRouter and Plugins
+路由库，方便项目集成路由功能，欢迎star！
 
 ### 自动集成步骤
 
@@ -11,7 +11,7 @@ allprojects{
       
     }
     dependencies {
-       classpath "com.github.mrchengwenlong:SimpleRouter:1.0.0"
+       classpath "com.github.mrchengwenlong:SimpleRouter:1.0.0" //添加路由插件
     }
 }
 ```
@@ -21,7 +21,7 @@ allprojects{
 - ###### 第一步：添加SDK、在module的build.gradle文件添加路由依赖
 ```gradle
 dependencies {
-    implementation "com.gitee.its_takiku:simplerouter:1.0.3"
+    implementation "com.gitee.its_takiku:simplerouter:1.0.3" //添加路由库的依赖
 }
 ```
 - ###### 第二步：添加构建插件、 在module的build.gradle添加插件引用，自行配置插件参数
