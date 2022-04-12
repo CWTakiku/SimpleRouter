@@ -5,20 +5,15 @@ dependencies {
     implementation gradleApi()
     implementation localGroovy()
 }
-version='1.0.0'
-archivesBaseName = 'simpleRouterPlugin'
-
-if (isImplementationLocation.toBoolean()){
-    apply plugin: 'maven'
-    uploadArchives {
-        repositories {
-            mavenDeployer {
-                repository(url: uri('../repo'))
-            }
+apply plugin: 'maven'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+            pom.groupId = 'com.takiku.plugin'//groupid自行定义，一般是包名
+            pom.artifactId = 'simpleRouterPlugin'//自行定义
+            pom.version = '1.0.0'//版本名称
         }
     }
-}else {
-     apply plugin: 'com.github.dcendents.android-maven'
-
 }
 

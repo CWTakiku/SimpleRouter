@@ -17,7 +17,8 @@ buildscript {
         if (!isImplementationLocation.toBoolean()){
             classpath "com.github.mrchengwenlong:SimpleRouter:$simplerouter_plugin_version"
         }else {
-            classpath 'com.takiku.simplerouter:simpleRouterPlugin:1.0.0'
+            //命名规则groupId：artifactId:version
+            classpath 'com.takiku.plugin:simpleRouterPlugin:1.0.0'
         }
 
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"

@@ -13,5 +13,13 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
+        String path = "asda";
+        int a= 3;
+        String conte = "D:\\android_project\\simplerouter\\app";
+        System.out.println(conte);
+        int index = conte.lastIndexOf("\\");
+        System.out.println(index);
+      //  String content = "   pathMap.put(\""+routerBean.getPath()"\","+"SimpleRouterObj.create("+routerBean.getClazz()","+routerBean.getType()",\""+routerBean.getPath()"\",\""+routerBean.getGroup()+"\"));"
+       //ystem.out.println(content);
     }
 }

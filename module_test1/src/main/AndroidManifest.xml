@@ -3,8 +3,8 @@
     package="com.stl.module_test1">
 
     <application>
-        <activity android:name=".KotlinActivity1"/>
-        <activity android:name=".TestActivity1" />
+        <activity android:name=".t.KotlinActivity1"/>
+        <activity android:name="com.takiku.module_test1.TestActivity1" />
     </application>
 
 </manifest>

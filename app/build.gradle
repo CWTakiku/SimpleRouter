@@ -1,5 +1,10 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.stl.simplerouter'
+if (isImplementationLocation.toBoolean()){
+    apply plugin: 'com.takiku.simplerouter'
+}else {
+    apply plugin: 'com.stl.simplerouter'
+}
+
 apply plugin: 'kotlin-android'
 
 android {
@@ -28,8 +33,7 @@ android {
 }
 
 pathExtension {
-    srcPath "src\\main\\java\\com\\stl"
-    routerPackName "com.stl.router"
+    srcPath "src\\main\\java\\com\\takiku"
     filterPrefix "app", "module"
 }
 
@@ -45,9 +49,5 @@ dependencies {
     implementation project(':module_test1')
     implementation project(':module_test2')
 
-    if (isImplementationLocation.toBoolean()) {
-        implementation project(':lib_router')
-    } else {
-        implementation "com.gitee.its_takiku:simplerouter:$lib_router_version"
-    }
+    implementation project(':lib_router')
 }
