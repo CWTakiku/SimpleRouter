@@ -9,8 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import com.stl.simplerrouterdemo.R;
-import com.takiku.router.SimpleRouterApp;
+import com.takiku.lib_router.SimpleRouter;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.btn_1_java).setOnClickListener(this);
+        findViewById(R.id.btn_user_java).setOnClickListener(this);
         findViewById(R.id.btn_1_java_fragment).setOnClickListener(this);
         findViewById(R.id.btn_1_kotlin).setOnClickListener(this);
         findViewById(R.id.btn_1_kotlin_fragment).setOnClickListener(this);
@@ -33,18 +32,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        if (id == R.id.btn_1_java) {
-            SimpleRouterApp.get().startActivity("TestActivity1");
+        if (id == R.id.btn_user_java) {
+            SimpleRouter.getInstance().build("/module_mine/UserActivity").navigation(this);
+          //  SimpleRouterApp.get().startActivity("TestActivity1");
         } else if (id == R.id.btn_1_java_fragment) {
-            SimpleRouterApp.get().startActivity("FragmentActivity");
+          //  SimpleRouterApp.get().startActivity("FragmentActivity");
         } else if (id == R.id.btn_1_kotlin) {
-            SimpleRouterApp.get().startActivity("KotlinActivity1");
+          //  SimpleRouterApp.get().startActivity("KotlinActivity1");
         } else if (id == R.id.btn_1_kotlin_fragment) {
-            SimpleRouterApp.get().startActivity("FragmentActivity");
+          //  SimpleRouterApp.get().startActivity("FragmentActivity");
         } else if (id == R.id.btn_2_java) {
-            SimpleRouterApp.get().startActivity("TestActivity2");
+          //  SimpleRouterApp.get().startActivity("TestActivity2");
         } else if (id == R.id.btn_2_kotlin) {
-            SimpleRouterApp.get().startActivityForResult(this, "KotlinActivity2", REQUEST_CODE_KOTLIN);
+          //  SimpleRouterApp.get().startActivityForResult(this, "KotlinActivity2", REQUEST_CODE_KOTLIN);
         }
 
 

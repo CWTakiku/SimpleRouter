@@ -110,7 +110,7 @@ class SimpleRouterCreateMembers extends DefaultTask {
                 moduleName = list.get(0).getModuleName()
             }
             def pathClassName =  "SimpleRouter" + "\$\$" + "path" + "\$\$" + group+".java"
-            def pathStr = SimpleRouterTemp.createPathTemp(packageName,moduleName, mAllPathMap.get(group))
+            def pathStr = SimpleRouterTemp.createPathTemp(packageName,group, mAllPathMap.get(group))
             def memberFilePath = rootParentDir.path+ SEPARATOR + moduleName + generatedPath + SEPARATOR  + pathClassName
             println("----moduleName: "+moduleName+" group: "+group)
             createFileByDeleteOld(memberFilePath, pathStr)
@@ -133,31 +133,8 @@ class SimpleRouterCreateMembers extends DefaultTask {
            // println("groupClassName: "+groupClassName+" groupStr: "+groupStr)
         }
 
-
-
-
-
-
-        // 创建初始化类文件
-        println("--- projectDir---"+getProject().projectDir.path+" javapaht: "+javaPath+" packageNamePath:  "+packageNamePath)
-        def initFilePath = getProject().projectDir.path +  generatedPath + SEPARATOR + SimpleRouterTemp.FILE_NAME_INIT_CLASS
-        println("----"+initFilePath+"------")
-        createRouterInitFile(initFilePath, packageName)
     }
 
-
-    /**
-     * 创建初始化文件
-     *
-     * @param filePath 初始化文件
-     * @param packageName 包名
-     */
-    private static void createRouterInitFile(String filePath, String packageName) {
-        // 剔除路径分隔符影响
-        filePath = filePath.replace("${SEPARATOR}${SEPARATOR}", SEPARATOR)
-        def fileTemp = SimpleRouterTemp.getInitFileTemp(packageName)
-        createFileByDeleteOld(filePath, fileTemp)
-    }
 
      boolean checkRouterPaht(RouterBean routerBean){
         return true;
